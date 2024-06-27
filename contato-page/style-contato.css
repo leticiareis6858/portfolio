@@ -1,98 +1,16 @@
 /* arquivo css que define o estilo do formulário da página de contato */
-form {
-  margin: 40px 0;
-  font-family: "Roboto", sans-serif;
+.redes-link {
+  color: rgb(240, 74, 124);
 }
 
-form label,
-form legend {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #000000;
-}
-/* 
-Aluna: Ana Leticia Vieira
-RU: 4106985  
-*/
-.mensagem-input {
-  display: flex;
-  flex-direction: column;
+.redes-link:hover {
+  color: rgb(182, 0, 55);
 }
 
-.mensagem-input label {
-  flex: 1;
+.dark .redes-link {
+  color: rgb(169, 87, 202);
 }
 
-.mensagem-input textarea {
-  flex: 3;
-}
-
-.input-padrao {
-  display: block;
-  margin: 0 0 20px;
-  padding: 10px 25px;
-  width: 50%;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-}
-
-.checkbox {
-  margin: 20px 0;
-  font-size: 16px;
-  color: #1c1c1c;
-}
-
-.enviar {
-  width: 40%;
-  padding: 15px 0;
-  background: #c129e0;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.enviar:hover {
-  background: #d259ec;
-  transform: scale(1.05);
-}
-
-.dark form label,
-form legend {
-  color: #ffffff;
-}
-
-.dark .input-padrao {
-  background: #1c1c1c;
-  border: 2px solid #ffffff;
-}
-
-.dark ::placeholder {
-  color: #ffffff;
-}
-
-.dark .enviar {
-  background: #f8669c;
-}
-
-.dark .enviar:hover {
-  background: #fd4c8d;
-}
-
-thead {
-  background: #555555;
-  color: white;
-  font-weight: bold;
-}
-
-td,
-th {
-  border: 1px solid #000000;
-  padding: 8px 15px;
-  font-family: "Roboto", sans-serif;
+.dark .redes-link:hover {
+  color: rgb(158, 56, 153);
 }
