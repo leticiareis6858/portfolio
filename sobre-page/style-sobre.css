@@ -1,0 +1,20 @@
+/* arquivo de estilo da página "sobre mim" */
+/* define o estilo dos links da página */
+.redes-link {
+  color: rgb(240, 74, 124);
+}
+/* 
+Aluna: Ana Leticia Vieira
+RU: 4106985  
+*/
+.redes-link:hover {
+  color: rgb(182, 0, 55);
+}
+
+.dark .redes-link {
+  color: rgb(169, 87, 202);
+}
+
+.dark .redes-link:hover {
+  color: rgb(158, 56, 153);
+}

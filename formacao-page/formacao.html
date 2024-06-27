@@ -1,0 +1,76 @@
+<!-- html da página de "formação" -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formação</title>
+
+    <!-- importa o css e javascript utilizados na página -->
+    <link rel="stylesheet" href="/portfolio/style.css" />
+    <script type="text/javascript" src="/portfolio/app.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 
+    Aluna: Ana Leticia Vieira
+    RU: 4106985 
+  -->
+  <body>
+    <!-- div container onde fica todo o conteudo principal do site -->
+    <div class="container">
+      <!-- div topo-pagina onde ficam os links internos para as outras páginas -->
+      <div class="topo-pagina">
+        <h1><a href="/portfolio/index.html" class="home-link">Home</a></h1>
+        <h1>
+          <a href="/portfolio/sobre-page/sobre.html" class="home-link"
+            >Sobre mim</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/projetos-page/projetos.html" class="home-link"
+            >Projetos</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/contato-page/contato.html" class="home-link"
+            >Contato</a
+          >
+        </h1>
+      </div>
+      <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema  -->
+      <header class="cabecalho">
+        <div class="perfil">
+          <img class="perfil-foto" src="/portfolio/imagens/profile-pic.png" />
+          <div class="titulo">
+            <h1>Ana Leticia de Carvalho</h1>
+            <h3>
+              Desenvolvedora back-end e estudante de Análise e Desenvolvimento
+              de Sistemas
+            </h3>
+          </div>
+        </div>
+        <div class="tema">
+          <button onclick="mudarTema()">Alterar tema</button>
+        </div>
+      </header>
+
+      <!-- main class conteudo onde fica o conteúdo sobre minha formação -->
+      <main class="conteudo">
+        <div class="descricao">
+          <h2>Minha formação</h2>
+          <p>
+            Possuo Ensino Médio completo e atualmente estou cursando Tecnólogo
+            em Análise e Desenvolvimento de Sistemas na Uninter.
+            <br />
+            Após a conclusão de meu curso atual planejo cursar Matemática com
+            enfâse em Matemática Computacional.
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

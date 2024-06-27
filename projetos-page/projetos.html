@@ -1,0 +1,111 @@
+<!-- html da página de projetos -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos</title>
+
+    <!-- importa o css e javascript utilizados na página -->
+    <link rel="stylesheet" href="/portfolio/style.css" />
+    <link rel="stylesheet" href="/portfolio/projetos-page/style-projetos.css" />
+    <script type="text/javascript" src="/portfolio/app.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 
+    Aluna: Ana Leticia Vieira
+    RU: 4106985 
+  -->
+  <body>
+    <!-- class container onde fica todo o conteudo principal do site -->
+    <div class="container">
+      <!-- class topo da página onde ficam os links internos e o botão de mudar tema-->
+      <div class="topo-pagina">
+        <h1><a href="/portfolio/index.html" class="home-link">Home</a></h1>
+        <h1>
+          <a href="/portfolio/sobre-page/sobre.html" class="home-link"
+            >Sobre mim</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/formacao-page/formacao.html" class="home-link"
+            >Formação</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/contato-page/contato.html" class="home-link"
+            >Contato</a
+          >
+        </h1>
+      </div>
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar tema</button>
+      </div>
+
+      <h1>Projetos:</h1>
+
+      <!-- div projetos onde ficam os as imagens dos projetos, suas descrições e links externos para o projeto -->
+      <div class="projetos">
+        <!-- cada projeto tem sua div "projeto" separada -->
+        <div class="projeto">
+          <h3>Adivinho</h3>
+          <img
+            src="/portfolio/projetos-imagens/adivinho.png"
+            alt="imagem do projeto adivinho"
+            class="img-1"
+          />
+          <h5>
+            Esse projeto foi desenvolvido para a disciplina de Linguagem de
+            Programação e Algoritmos. Ele consiste em um jogo onde o computador
+            escolhe um número e o usuário tenta adivinhar qual é esse número.
+            Foi feito em Html, CSS e JavaScript.
+          </h5>
+          <p>
+            Link para o projeto:
+            <a
+              href="https://github.com/analeticiavieira/adivinho"
+              class="project-link"
+              >AQUI</a
+            >
+          </p>
+        </div>
+
+        <div class="projeto">
+          <h3>Cofrinho de moedas</h3>
+          <img
+            src="/portfolio/projetos-imagens/cofrinho.png"
+            alt="imagem do projeto cofrinho"
+            class="img-2"
+          />
+          <h5>
+            Esse projeto foi desenvolvido para as disciplinas de Programação
+            Orientada à Objetos e Banco de Dados e consiste em um cofrinho de
+            moedas. Inicialmente para a disciplina de POO ele era apenas um
+            cofrinho de moedas em Java, depois foi modificado para a disciplina
+            de BD e passou a ter um banco de dados SQL integrado.
+          </h5>
+          <p>
+            Link para o projeto(versão SEM banco de dados):
+            <a
+              href="https://github.com/analeticiavieira/cofrinho-de-moedas-JAVA"
+              class="project-link"
+              >AQUI</a
+            >
+          </p>
+          <p>
+            Link para o projeto(versão COM banco de dados):
+            <a
+              href="https://github.com/analeticiavieira/cofrinho-de-moedas-JAVA-com-BD"
+              class="project-link"
+              >AQUI</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+/* arquivo css principal */
+/* define o estilo do body, seu gradiente e a fonte a ser usada */
+body {
+  background: rgb(252, 139, 181);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 139, 181, 1) 67%,
+    rgba(178, 92, 195, 1) 96%
+  );
+}
+/* 
+Aluna: Ana Leticia Vieira
+RU: 4106985  
+*/
+/* define o estilo dos componetes do site, container, links, cabeçalho, perfil... */
+.container {
+  margin: 64px;
+  background: #ffffff36;
+  color: #000000;
+  border-radius: 20px;
+  padding: 64px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.topo-pagina {
+  display: flex;
+  justify-content: center;
+}
+
+.home-link {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+}
+
+.home-link:hover {
+  color: #000000;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  max-width: 160px;
+  border-radius: 460px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.tema button {
+  background: #ffffff36;
+  align-self: flex-end;
+  font-size: 16px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+.tema button:hover {
+  background: #33343981;
+  color: #ffffff;
+  border-radius: 100px;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 8px 32px;
+  background: radial-gradient(
+    circle,
+    rgba(252, 145, 184, 1) 9%,
+    rgba(218, 107, 241, 1) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.gif {
+  text-align: center;
+}
+
+.dark {
+  background: rgb(111, 41, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(111, 41, 126, 1) 46%,
+    rgba(226, 118, 157, 1) 86%
+  );
+}
+
+/* define o estilo dos componentes do site no modo dark */
+.dark .container {
+  background: #33343981;
+  color: #f6f6f6;
+}
+
+.dark .tema button {
+  color: #ffffff;
+  background: #33343981;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #f7f7f7;
+}
+
+.dark .tema button:hover {
+  background: #ffffff36;
+  color: #000000;
+  border-radius: 100px;
+  border: 2px solid;
+  border-color: #000000;
+}
+
+.dark .links {
+  background: rgb(140, 54, 158);
+  background: radial-gradient(
+    circle,
+    rgba(140, 54, 158, 1) 9%,
+    rgba(254, 139, 181, 1) 100%
+  );
+}
+
+.dark a {
+  color: #cccaca;
+}
+
+.dark a:hover {
+  color: #ffffff;
+}

@@ -1,0 +1,99 @@
+<!-- html da página de "contato" -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+
+    <!-- importa o css e javascript utilizados na página -->
+    <link rel="stylesheet" href="/portfolio/style.css" />
+    <link rel="stylesheet" href="/portfolio/contato-page/style-contato.css" />
+    <script type="text/javascript" src="/portfolio/app.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 
+    Aluna: Ana Leticia Vieira
+    RU: 4106985 
+  -->
+  <body>
+    <!-- div container onde fica todo o conteudo principal do site -->
+    <div class="container">
+      <!-- div topo da página onde ficam os links internos -->
+      <div class="topo-pagina">
+        <h1><a href="/portfolio/index.html" class="home-link">Home</a></h1>
+        <h1>
+          <a href="/portfolio/sobre-page/sobre.html" class="home-link"
+            >Sobre mim</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/formacao-page/formacao.html" class="home-link"
+            >Formação</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/projetos-page/projetos.html" class="home-link"
+            >Projetos</a
+          >
+        </h1>
+      </div>
+      <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema -->
+      <header class="cabecalho">
+        <div class="perfil">
+          <img class="perfil-foto" src="/portfolio/imagens/profile-pic.png" />
+          <div class="titulo">
+            <h1>Ana Leticia de Carvalho</h1>
+            <h3>
+              Desenvolvedora back-end e estudante de Análise e Desenvolvimento
+              de Sistemas
+            </h3>
+          </div>
+        </div>
+        <div class="tema">
+          <button onclick="mudarTema()">Alterar tema</button>
+        </div>
+      </header>
+      <!-- main class  formulário, onde fica o formulário para contato -->
+      <main class="formulario">
+        <p>Use o formulário abaixo para entrar em contato comigo:</p>
+        <form>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            class="input-padrao"
+            required
+            placeholder="Seu nome"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="input-padrao"
+            required
+            placeholder="Seu email@dominio.com"
+          />
+
+          <div class="mensagem-input">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              cols="70"
+              rows="10"
+              id="mensagem"
+              class="input-padrao"
+              required
+              placeholder="Sua mensagem"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar formulário" class="enviar" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

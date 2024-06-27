@@ -1,0 +1,64 @@
+/* arquivo do estilo da página de projetos */
+/* define o estilo das divs de projetos, projeto e os tamanhos das imagens */
+.tema {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 
+Aluna: Ana Leticia Vieira
+RU: 4106985  
+*/
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 8px 32px;
+  background: radial-gradient(
+    circle,
+    rgba(252, 145, 184, 0.61) 9%,
+    rgba(219, 107, 241, 0.445) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  height: auto;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img-1 {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.img-2 {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.projeto h3 {
+  margin: 0;
+}
+
+.projeto p {
+  margin: 0;
+}
+
+.project-link {
+  color: rgb(129, 15, 151);
+}
+
+.dark .projetos {
+  background: radial-gradient(
+    circle,
+    rgba(252, 145, 184, 0.438) 9%,
+    rgba(219, 107, 241, 0.151) 100%
+  );
+}

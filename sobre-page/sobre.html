@@ -1,0 +1,88 @@
+<!-- html da página "sobre mim" -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mim</title>
+
+    <!-- importa o css e javascript utilizados na página -->
+    <link rel="stylesheet" href="/portfolio/sobre-page/style-sobre.css" />
+    <link rel="stylesheet" href="/portfolio/style.css" />
+    <script type="text/javascript" src="/portfolio/app.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 
+    Aluna: Ana Leticia Vieira
+    RU: 4106985 
+  -->
+  <body>
+    <!-- div container onde fica todo o conteudo principal do site -->
+    <div class="container">
+      <!-- div topo da página onde ficam os links internos -->
+      <div class="topo-pagina">
+        <h1><a href="/portfolio/index.html" class="home-link">Home</a></h1>
+        <h1>
+          <a href="/portfolio/formacao-page/formacao.html" class="home-link"
+            >Formação</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/projetos-page/projetos.html" class="home-link"
+            >Projetos</a
+          >
+        </h1>
+        <h1>
+          <a href="/portfolio/contato-page/contato.html" class="home-link"
+            >Contato</a
+          >
+        </h1>
+      </div>
+      <!-- div cabeçalho onde ficam a foto de perfil, meu nome, botão de mudar tema e uma pequena descrição sobre mim -->
+      <header class="cabecalho">
+        <div class="perfil">
+          <img class="perfil-foto" src="/portfolio/imagens/profile-pic.png" />
+          <div class="titulo">
+            <h1>Ana Leticia de Carvalho</h1>
+            <h3>
+              Desenvolvedora back-end e estudante de Análise e Desenvolvimento
+              de Sistemas
+            </h3>
+          </div>
+        </div>
+        <div class="tema">
+          <button onclick="mudarTema()">Alterar tema</button>
+        </div>
+      </header>
+
+      <!-- main class conteúdo onde fica o conteúdo principal sobre mim + minhas redes -->
+      <main class="conteudo">
+        <div class="descricao">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou uma desenvolvedora back-end, apaixonada por tecnologia. Tenho
+            experiência em Node.js, JavaScript, TypeScript, Java, MongoDB e SQL.
+          </p>
+          <p>
+            Meu Linkedin:
+            <a
+              href="https://www.linkedin.com/in/analeticia6858/"
+              class="redes-link"
+              >Linkedin</a
+            >
+          </p>
+          <p>
+            Meu GitHub:
+            <a href="https://github.com/analeticiavieira" class="redes-link"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
