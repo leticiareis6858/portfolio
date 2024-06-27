@@ -1,16 +1,16 @@
 /* arquivo css que define o estilo do formulário da página de contato */
-.redes-link {
+.contatos-link {
   color: rgb(240, 74, 124);
 }
 
-.redes-link:hover {
+.contatos-link:hover {
   color: rgb(182, 0, 55);
 }
 
-.dark .redes-link {
+.dark .contatos-link {
   color: rgb(169, 87, 202);
 }
 
-.dark .redes-link:hover {
+.dark .contatos-link:hover {
   color: rgb(158, 56, 153);
 }
