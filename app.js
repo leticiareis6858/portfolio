@@ -3,10 +3,7 @@ function mudarTema() {
   document.body.classList.toggle("dark");
 
   const temaDark = document.body.classList.contains("dark");
-  /* 
-  Aluna: Ana Leticia Vieira
-  RU: 4106985  
-*/
+ 
   //parte para mudar o gif apresentado na home-page de acordo com o tema
   const gif = document.getElementById("gif");
 
