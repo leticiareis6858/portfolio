@@ -15,10 +15,6 @@
       rel="stylesheet"
     />
   </head>
-  <!-- 
-    Aluna: Ana Leticia Vieira
-    RU: 4106985 
-  -->
   <body>
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
@@ -57,42 +53,28 @@
           <button onclick="mudarTema()">Alterar tema</button>
         </div>
       </header>
-      <!-- main class  formulário, onde fica o formulário para contato -->
-      <main class="formulario">
-        <p>Use o formulário abaixo para entrar em contato comigo:</p>
-        <form>
-          <label for="nome">Nome:</label>
-          <input
-            type="text"
-            id="nome"
-            class="input-padrao"
-            required
-            placeholder="Seu nome"
-          />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            class="input-padrao"
-            required
-            placeholder="Seu email@dominio.com"
-          />
-
-          <div class="mensagem-input">
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              cols="70"
-              rows="10"
-              id="mensagem"
-              class="input-padrao"
-              required
-              placeholder="Sua mensagem"
-            ></textarea>
-          </div>
-
-          <input type="submit" value="Enviar formulário" class="enviar" />
-        </form>
+      <!-- Main class onde fica o conteúdo de contato(email + linkedin) -->
+      <main class="conteudo">
+        <div class="descricao">
+          <h2>Sobre mim</h2>
+          <p>
+            Entre em contato comigo através do meu email ou do meu linkedin!
+          </p>
+          <p>
+            Meu email
+            <a href="mailto:leticiareisvr2@gmail.com" class="contatos-link"
+              >leticiareisvr2@gmail.comb</a
+            >
+          </p>
+          <p>
+            Meu Linkedin:
+            <a
+              href="https://www.linkedin.com/in/analeticia6858/"
+              class="contatos-link"
+              >Linkedin</a
+            >
+          </p>
+        </div>
       </main>
     </div>
   </body>
