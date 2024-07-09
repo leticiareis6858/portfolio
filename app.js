@@ -48,7 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!anoSemestreElement) {
       anoSemestreElement = document.createElement("p");
       anoSemestreElement.classList.add("ano-semestre");
-      projeto.insertBefore(anoSemestreElement, projeto.querySelector("img"));
+      projeto.insertBefore(
+        anoSemestreElement,
+        projeto.querySelector(".imagens-container")
+      );
     }
     anoSemestreElement.textContent = anoSemestreTexto;
 

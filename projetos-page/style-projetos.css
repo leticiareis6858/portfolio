@@ -5,10 +5,11 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 .projetos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   padding: 8px 32px;
   background: radial-gradient(
     circle,
@@ -17,38 +18,74 @@
   );
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  height: auto;
+  grid-auto-flow: dense;
 }
 
 .projeto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-}
-
-.img-1 {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.img-2 {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #8d8d8d7e;
+  border-radius: 10px;
+  background-color: #f9f9f963;
+  box-sizing: border-box;
 }
 
 .projeto h3 {
-  margin: 0;
+  font-size: 1.5em;
 }
 
-.projeto p {
-  margin: 0;
+.projeto img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 5px 0;
+}
+
+.projeto p,
+.projeto h5 {
+  margin: 10px 0;
+}
+
+.projeto img + img {
+  margin-left: 10px;
+}
+
+.projeto .ano-semestre {
+  margin: 10px 0;
+}
+
+.projeto .imagens-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projeto .imagens-container img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .project-link {
   color: rgb(129, 15, 151);
+}
+
+.project-link {
+  color: rgb(240, 74, 124);
+}
+.project-link:hover {
+  color: rgb(182, 0, 55);
+}
+
+.dark .project-link {
+  color: rgb(169, 87, 202);
+}
+
+.dark .project-link:hover {
+  color: rgb(158, 56, 153);
 }
 
 .dark .projetos {
