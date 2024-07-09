@@ -8,8 +8,8 @@ function mudarTema() {
   const gif = document.getElementById("gif");
 
   const caminhoGIF = temaDark
-    ? "/portfolio/imagens/gray-cat.gif"
-    : "/portfolio/imagens/cat.gif";
+    ? "/imagens/gray-cat.gif"
+    : "/imagens/cat.gif";
 
   gif.src = caminhoGIF;
 }
