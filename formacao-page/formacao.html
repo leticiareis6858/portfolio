@@ -18,10 +18,10 @@
   <body>
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
-      <!-- Botão de Menu -->
+      <!-- botão de Menu (apenas para telas pequenas)-->
       <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
 
-      <!-- Menu deslizante -->
+      <!-- menu deslizante (apenas para telas pequenas)-->
       <div class="menu" id="menu">
         <a href="/index.html">Home</a>
         <a href="/sobre-page/sobre.html">Sobre mim</a>
@@ -29,11 +29,12 @@
         <a href="/contato-page/contato.html">Contato</a>
       </div>
 
+      <!-- botão de mudar tema -->
       <div class="tema">
         <button onclick="mudarTema()">Alterar tema</button>
       </div>
 
-      <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema  -->
+      <!-- topo da página onde fica o menu do site(para telas grandes) -->
       <div class="topo-pagina">
         <h1><a href="/index.html" class="home-link">Home</a></h1>
         <h1>
@@ -46,6 +47,8 @@
           <a href="/contato-page/contato.html" class="home-link">Contato</a>
         </h1>
       </div>
+
+      <!-- header cabeçalho onde fica a foto de perfil -->
       <header class="cabecalho">
         <div class="perfil">
           <img class="perfil-foto" src="/imagens/profile-pic.png" />

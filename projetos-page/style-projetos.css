@@ -31,7 +31,7 @@
   background-color: #f9f9f9;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
-  background: rgba(248, 230, 230, 0.384); /* Transparência para efeito glass */
+  background: rgba(248, 230, 230, 0.384);
 }
 
 .projeto h3 {
@@ -98,10 +98,10 @@
   );
 }
 
-/* Responsividade */
+/* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
   .projetos {
-    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    grid-template-columns: 1fr;
     padding: 8px 16px;
   }
 
@@ -140,9 +140,10 @@
   }
 }
 
+/* para telas ainda menores */
 @media screen and (max-width: 480px) {
   .projetos {
-    grid-template-columns: 1fr; /* Uma coluna em telas menores ainda */
+    grid-template-columns: 1fr;
   }
 
   .perfil {

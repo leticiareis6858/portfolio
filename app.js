@@ -1,4 +1,4 @@
-// Função para mudar o tema do site para dark
+// função para mudar o tema do site para dark
 function mudarTema() {
   document.body.classList.toggle("dark");
 
@@ -16,7 +16,7 @@ function mudarTema() {
   }
 }
 
-// Função para aplicar o tema salvo no localStorage ao carregar a página
+// função para aplicar o tema salvo no localStorage ao carregar a página
 function aplicarTemaSalvo() {
   const temaDark = localStorage.getItem("temaDark") === "true";
 
@@ -26,7 +26,7 @@ function aplicarTemaSalvo() {
     document.body.classList.remove("dark");
   }
 
-  // Parte para mudar o gif apresentado na home-page de acordo com o tema
+  // parte para mudar o gif apresentado na home-page de acordo com o tema
   const gif = document.getElementById("gif");
   const caminhoGIF = temaDark ? "/imagens/gray-cat.gif" : "/imagens/cat.gif";
 
@@ -35,9 +35,8 @@ function aplicarTemaSalvo() {
   }
 }
 
-// Script para ordenar os projetos de acordo com seu ano e semestre de desenvolvimento
+// script para ordenar os projetos de acordo com seu ano e semestre de desenvolvimento
 document.addEventListener("DOMContentLoaded", function () {
-  // Aplica o tema salvo
   aplicarTemaSalvo();
 
   const projetosContainer = document.querySelector(".projetos");
@@ -83,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// script para abrir e fechar o menu
 function toggleMenu() {
   var menu = document.getElementById("menu");
   menu.classList.toggle("open");

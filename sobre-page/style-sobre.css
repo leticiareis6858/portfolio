@@ -16,7 +16,7 @@
   color: rgb(158, 56, 153);
 }
 
-/* Responsividade */
+/* responsividade para telas menores*/
 @media screen and (max-width: 768px) {
   .redes-link {
     font-size: 18px;
