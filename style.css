@@ -9,6 +9,12 @@ body {
   );
 }
 
+.tema {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* define o estilo dos componentes do site, container, links, cabeçalho, perfil... */
 .container {
   margin: 64px;

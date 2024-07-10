@@ -15,18 +15,22 @@
     />
   </head>
   <body>
-    <!-- Botão de Menu (apenas para dispositivos pequenos) -->
-    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-
-    <!-- Menu deslizante (apenas para dispositivos pequenos) -->
-    <div class="menu" id="menu">
-      <a href="/index.html">Home</a>
-      <a href="/sobre-page/sobre.html">Sobre mim</a>
-      <a href="/formacao-page/formacao.html">Formação</a>
-      <a href="/projetos-page/projetos.html">Projetos</a>
-    </div>
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
+      <!-- Botão de Menu (apenas para dispositivos pequenos) -->
+      <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+
+      <!-- Menu deslizante (apenas para dispositivos pequenos) -->
+      <div class="menu" id="menu">
+        <a href="/index.html">Home</a>
+        <a href="/sobre-page/sobre.html">Sobre mim</a>
+        <a href="/formacao-page/formacao.html">Formação</a>
+        <a href="/projetos-page/projetos.html">Projetos</a>
+      </div>
+
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar tema</button>
+      </div>
       <div class="topo-pagina">
         <h1><a href="/index.html" class="home-link">Home</a></h1>
         <h1>
@@ -50,9 +54,6 @@
               de Sistemas
             </h3>
           </div>
-        </div>
-        <div class="tema">
-          <button onclick="mudarTema()">Alterar tema</button>
         </div>
       </header>
       <!-- Main class onde fica o conteúdo de contato(email + linkedin) -->

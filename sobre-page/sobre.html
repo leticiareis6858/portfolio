@@ -17,19 +17,22 @@
     />
   </head>
   <body>
-    <!-- Botão de Menu -->
-    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-
-    <!-- Menu deslizante -->
-    <div class="menu" id="menu">
-      <a href="/index.html">Home</a>
-      <a href="/formacao-page/formacao.html">Formação</a>
-      <a href="/projetos-page/projetos.html">Projetos</a>
-      <a href="/contato-page/contato.html">Contato</a>
-    </div>
-
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
+      <!-- Botão de Menu -->
+      <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+
+      <!-- Menu deslizante -->
+      <div class="menu" id="menu">
+        <a href="/index.html">Home</a>
+        <a href="/formacao-page/formacao.html">Formação</a>
+        <a href="/projetos-page/projetos.html">Projetos</a>
+        <a href="/contato-page/contato.html">Contato</a>
+      </div>
+
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar tema</button>
+      </div>
       <!-- div topo da página onde ficam os links internos -->
       <div class="topo-pagina">
         <h1><a href="/index.html" class="home-link">Home</a></h1>
@@ -54,9 +57,6 @@
               de Sistemas
             </h3>
           </div>
-        </div>
-        <div class="tema">
-          <button onclick="mudarTema()">Alterar tema</button>
         </div>
       </header>
 
