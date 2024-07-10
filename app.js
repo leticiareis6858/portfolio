@@ -82,3 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
     projetosContainer.appendChild(projeto);
   });
 });
+
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("open");
+}

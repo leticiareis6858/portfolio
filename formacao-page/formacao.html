@@ -16,9 +16,20 @@
     />
   </head>
   <body>
+    <!-- Botão de Menu -->
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+
+    <!-- Menu deslizante -->
+    <div class="menu" id="menu">
+      <a href="/index.html">Home</a>
+      <a href="/sobre-page/sobre.html">Sobre mim</a>
+      <a href="/projetos-page/projetos.html">Projetos</a>
+      <a href="/contato-page/contato.html">Contato</a>
+    </div>
+
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
-      <!-- div topo-pagina onde ficam os links internos para as outras páginas -->
+      <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema  -->
       <div class="topo-pagina">
         <h1><a href="/index.html" class="home-link">Home</a></h1>
         <h1>
@@ -31,7 +42,6 @@
           <a href="/contato-page/contato.html" class="home-link">Contato</a>
         </h1>
       </div>
-      <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema  -->
       <header class="cabecalho">
         <div class="perfil">
           <img class="perfil-foto" src="/imagens/profile-pic.png" />

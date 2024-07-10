@@ -1,4 +1,3 @@
-<!-- html da página de "contato" -->
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -9,26 +8,35 @@
     <!-- importa o css e javascript utilizados na página -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/contato-page/style-contato.css" />
-    <script type="text/javascript" src="/app.js"></script>
+    <script type="text/javascript" src="/app.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Botão de Menu (apenas para dispositivos pequenos) -->
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+
+    <!-- Menu deslizante (apenas para dispositivos pequenos) -->
+    <div class="menu" id="menu">
+      <a href="/index.html">Home</a>
+      <a href="/sobre-page/sobre.html">Sobre mim</a>
+      <a href="/formacao-page/formacao.html">Formação</a>
+      <a href="/projetos-page/projetos.html">Projetos</a>
+    </div>
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
-      <!-- div topo da página onde ficam os links internos -->
       <div class="topo-pagina">
         <h1><a href="/index.html" class="home-link">Home</a></h1>
-        <h1>
-          <a href="/sobre-page/sobre.html" class="home-link">Sobre mim</a>
-        </h1>
         <h1>
           <a href="/formacao-page/formacao.html" class="home-link">Formação</a>
         </h1>
         <h1>
           <a href="/projetos-page/projetos.html" class="home-link">Projetos</a>
+        </h1>
+        <h1>
+          <a href="/contato-page/contato.html" class="home-link">Contato</a>
         </h1>
       </div>
       <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema -->

@@ -26,10 +26,12 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  border: 1px solid #8d8d8d7e;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #f9f9f963;
+  background-color: #f9f9f9;
   box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  background: rgba(248, 230, 230, 0.384); /* Transparência para efeito glass */
 }
 
 .projeto h3 {
@@ -94,4 +96,70 @@
     rgba(252, 145, 184, 0.438) 9%,
     rgba(219, 107, 241, 0.151) 100%
   );
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .projetos {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    padding: 8px 16px;
+  }
+
+  .projeto {
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-foto {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .titulo h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .titulo h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .links h1 {
+    font-size: 18px;
+  }
+
+  .gif iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projetos {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores ainda */
+  }
+
+  .perfil {
+    align-items: center;
+  }
+
+  .titulo h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .titulo h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .links h1 {
+    font-size: 16px;
+  }
 }
