@@ -8,7 +8,15 @@ body {
     rgba(178, 92, 195, 1) 96%
   );
 }
-/* define o estilo dos componetes do site, container, links, cabeçalho, perfil... */
+
+/* define o estilo do botão de tema*/
+.tema {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* define o estilo dos componentes do site, container, links, cabeçalho, perfil... */
 .container {
   margin: 64px;
   background: #ffffff36;
@@ -65,7 +73,8 @@ body {
   font-size: 24px;
 }
 
-.tema button {
+/* define o estilo dos botões */
+button {
   background: #ffffff36;
   align-self: flex-end;
   font-size: 16px;
@@ -76,7 +85,7 @@ body {
   cursor: pointer;
 }
 
-.tema button:hover {
+button:hover {
   background: #33343981;
   color: #ffffff;
   border-radius: 100px;
@@ -84,6 +93,7 @@ body {
   border-color: #ffffff;
 }
 
+/* define o estilo dos links */
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +110,10 @@ body {
   height: auto;
 }
 
+.links h1 {
+  font-size: 24px;
+}
+
 a {
   text-decoration: none;
   color: #1c1c1c;
@@ -110,10 +124,18 @@ a:hover {
   color: #000000;
 }
 
+/* define o estilo dos gifs */
+
 .gif {
   text-align: center;
 }
 
+.gif img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* define o estilo dos componentes do site no modo dark */
 .dark {
   background: rgb(111, 41, 126);
   background: linear-gradient(
@@ -123,13 +145,12 @@ a:hover {
   );
 }
 
-/* define o estilo dos componentes do site no modo dark */
 .dark .container {
   background: #33343981;
   color: #f6f6f6;
 }
 
-.dark .tema button {
+.dark button {
   color: #ffffff;
   background: #33343981;
   box-sizing: border-box;
@@ -137,7 +158,7 @@ a:hover {
   border: 2px solid #f7f7f7;
 }
 
-.dark .tema button:hover {
+.dark button:hover {
   background: #ffffff36;
   color: #000000;
   border-radius: 100px;
@@ -160,4 +181,134 @@ a:hover {
 
 .dark a:hover {
   color: #ffffff;
+}
+
+/* configurações para telas pequenas */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 32px;
+    padding: 32px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-foto {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .titulo h1 {
+    font-size: 28px;
+  }
+
+  .titulo h3 {
+    font-size: 20px;
+  }
+
+  .links {
+    flex-direction: inherit;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .links h1 {
+    font-size: 20px;
+  }
+
+  .topo-pagina {
+    display: none;
+  }
+}
+
+/* configurações para telas ainda mais pequenas */
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  .titulo h1 {
+    font-size: 24px;
+  }
+
+  .titulo h3 {
+    font-size: 18px;
+  }
+
+  .links h1 {
+    font-size: 18px;
+  }
+
+  .links {
+    gap: 10px;
+  }
+}
+
+/* define o estilo do menu flutuante ( apenas para telas pequenas)*/
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 1, 24, 0.705);
+  z-index: 999;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu.open {
+  display: flex;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.menu-toggle {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .topo-pagina {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .conteudo {
+    padding: 20px;
+  }
 }

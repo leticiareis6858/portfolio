@@ -7,8 +7,8 @@
     <title>Formação</title>
 
     <!-- importa o css e javascript utilizados na página -->
-    <link rel="stylesheet" href="/portfolio/style.css" />
-    <script type="text/javascript" src="/portfolio/app.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="text/javascript" src="/app.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
@@ -18,29 +18,40 @@
   <body>
     <!-- div container onde fica todo o conteudo principal do site -->
     <div class="container">
-      <!-- div topo-pagina onde ficam os links internos para as outras páginas -->
+      <!-- botão de Menu (apenas para telas pequenas)-->
+      <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+
+      <!-- menu deslizante (apenas para telas pequenas)-->
+      <div class="menu" id="menu">
+        <a href="/index.html">Home</a>
+        <a href="/sobre-page/sobre.html">Sobre mim</a>
+        <a href="/projetos-page/projetos.html">Projetos</a>
+        <a href="/contato-page/contato.html">Contato</a>
+      </div>
+
+      <!-- botão de mudar tema -->
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar tema</button>
+      </div>
+
+      <!-- topo da página onde fica o menu do site(para telas grandes) -->
       <div class="topo-pagina">
-        <h1><a href="/portfolio/index.html" class="home-link">Home</a></h1>
+        <h1><a href="/index.html" class="home-link">Home</a></h1>
         <h1>
-          <a href="/portfolio/sobre-page/sobre.html" class="home-link"
-            >Sobre mim</a
-          >
+          <a href="/sobre-page/sobre.html" class="home-link">Sobre mim</a>
         </h1>
         <h1>
-          <a href="/portfolio/projetos-page/projetos.html" class="home-link"
-            >Projetos</a
-          >
+          <a href="/projetos-page/projetos.html" class="home-link">Projetos</a>
         </h1>
         <h1>
-          <a href="/portfolio/contato-page/contato.html" class="home-link"
-            >Contato</a
-          >
+          <a href="/contato-page/contato.html" class="home-link">Contato</a>
         </h1>
       </div>
-      <!-- header cabeçalho onde fica a foto de perfil e o botão de mudar tema  -->
+
+      <!-- header cabeçalho onde fica a foto de perfil -->
       <header class="cabecalho">
         <div class="perfil">
-          <img class="perfil-foto" src="/portfolio/imagens/profile-pic.png" />
+          <img class="perfil-foto" src="/imagens/profile-pic.png" />
           <div class="titulo">
             <h1>Ana Leticia de Carvalho</h1>
             <h3>
@@ -48,9 +59,6 @@
               de Sistemas
             </h3>
           </div>
-        </div>
-        <div class="tema">
-          <button onclick="mudarTema()">Alterar tema</button>
         </div>
       </header>
 

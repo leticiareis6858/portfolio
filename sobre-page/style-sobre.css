@@ -3,6 +3,7 @@
 .redes-link {
   color: rgb(240, 74, 124);
 }
+
 .redes-link:hover {
   color: rgb(182, 0, 55);
 }
@@ -13,4 +14,17 @@
 
 .dark .redes-link:hover {
   color: rgb(158, 56, 153);
+}
+
+/* responsividade para telas menores*/
+@media screen and (max-width: 768px) {
+  .redes-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .redes-link {
+    font-size: 16px;
+  }
 }
