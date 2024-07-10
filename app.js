@@ -9,7 +9,9 @@ function mudarTema() {
 
   // Parte para mudar o gif apresentado na home-page de acordo com o tema
   const gif = document.getElementById("gif");
-  const caminhoGIF = temaDark ? "/imagens/gray-cat.gif" : "/imagens/cat.gif";
+  const caminhoGIF = temaDark
+    ? "/imagens/gifs/gray-cat.gif"
+    : "/imagens/gifs/cat.gif";
 
   if (gif) {
     gif.src = caminhoGIF;
@@ -28,7 +30,9 @@ function aplicarTemaSalvo() {
 
   // parte para mudar o gif apresentado na home-page de acordo com o tema
   const gif = document.getElementById("gif");
-  const caminhoGIF = temaDark ? "/imagens/gray-cat.gif" : "/imagens/cat.gif";
+  const caminhoGIF = temaDark
+    ? "/imagens/gifs/gray-cat.gif"
+    : "/imagens/gifs/cat.gif";
 
   if (gif) {
     gif.src = caminhoGIF;
