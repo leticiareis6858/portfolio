@@ -1,3 +1,3 @@
-# Portifólio
+# 📖| Portfólio
 
-Esse repositório é para meu portifólio pessoal.
+Esse repositório é para meu portfólio pessoal.
