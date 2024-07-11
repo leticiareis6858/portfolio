@@ -10,8 +10,8 @@ function mudarTema() {
   // Parte para mudar o gif apresentado na home-page de acordo com o tema
   const gif = document.getElementById("gif");
   const caminhoGIF = temaDark
-    ? "/imagens/gifs/space-cat-kaijupxl.gif"
-    : "/imagens/gifs/plant-kaijupxl.gif";
+    ? "/portfolio/imagens/gifs/space-cat-kaijupxl.gif"
+    : "/portfolio/imagens/gifs/plant-kaijupxl.gif";
 
   if (gif) {
     gif.src = caminhoGIF;
@@ -31,8 +31,8 @@ function aplicarTemaSalvo() {
   // parte para mudar o gif apresentado na home-page de acordo com o tema
   const gif = document.getElementById("gif");
   const caminhoGIF = temaDark
-    ? "/imagens/gifs/space-cat-kaijupxl.gif"
-    : "/imagens/gifs/plant-kaijupxl.gif";
+    ? "/portfolio/imagens/gifs/space-cat-kaijupxl.gif"
+    : "/portfolio/imagens/gifs/plant-kaijupxl.gif";
 
   if (gif) {
     gif.src = caminhoGIF;
