@@ -1,10 +1,35 @@
-<!-- html da home-page -->
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio</title>
+    <title>Portfólio - Ana Leticia Vieira</title>
+
+    <!-- links para os favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/portfolio/imagens/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/portfolio/imagens/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/portfolio/imagens/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/portfolio/imagens/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/portfolio/imagens/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/portfolio/imagens/icons/favicon.ico" />
 
     <!-- importa o css e javascript utilizados na página -->
     <link rel="stylesheet" href="/portfolio/style.css" />
@@ -16,44 +41,84 @@
       rel="stylesheet"
     />
   </head>
+  <body>
+    <!-- div container onde fica todo o conteudo principal do site -->
+    <div class="container">
+      <!-- botão de mudar o tema do site -->
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar tema</button>
+      </div>
 
-  <!-- div container onde fica todo o conteudo principal do site -->
-  <div class="container">
-    <!-- botão de mudar o tema do site -->
-    <div class="tema">
-      <button onclick="mudarTema()">Alterar tema</button>
-    </div>
+      <!-- header cabeçalho onde fica a foto de perfil -->
+      <header class="cabecalho">
+        <div class="perfil">
+          <img class="perfil-foto" src="/portfolio/imagens/profile-pic.png" />
+          <div class="titulo">
+            <h1>Ana Leticia Vieira</h1>
+            <h3>
+              Desenvolvedora back-end e estudante de Análise e Desenvolvimento
+              de Sistemas
+            </h3>
+          </div>
+        </div>
+      </header>
 
-    <!-- header cabeçalho onde fica a foto de perfil -->
-    <header class="cabecalho">
-      <div class="perfil">
-        <img class="perfil-foto" src="/portfolio/imagens/profile-pic.png" />
-        <div class="titulo">
-          <h1>Ana Leticia de Carvalho</h1>
-          <h3>
-            Desenvolvedora back-end e estudante de Análise e Desenvolvimento de
-            Sistemas
-          </h3>
+      <!-- div conteudo-principal que contém os links e o gif -->
+      <div class="conteudo-principal">
+        <!-- div links onde ficam os links internos para as outras páginas -->
+        <div class="links">
+          <div class="coluna-links">
+            <h1>
+              <a class="links-internos-home" href="/portfolio/sobre-page/sobre.html"
+                >Sobre mim</a
+              >
+            </h1>
+            <h1>
+              <a class="links-internos-home" href="/portfolio/formacao-page/formacao.html"
+                >Formação</a
+              >
+            </h1>
+            <h1>
+              <a class="links-internos-home" href="/portfolio/projetos-page/projetos.html"
+                >Projetos</a
+              >
+            </h1>
+            <h1>
+              <a class="links-internos-home" href="/portfolio/contato-page/contato.html"
+                >Contato</a
+              >
+            </h1>
+          </div>
+
+          <!-- div coluna-gif onde fica o gif que é exibido na home-page -->
+          <div class="coluna-gif">
+            <img
+              id="gif"
+              src="/portfolio/imagens/gifs/plant-kaijupxl.gif"
+              width="200"
+              height="200"
+            />
+          </div>
         </div>
       </div>
-    </header>
 
-    <!-- div links onde ficam os links internos para as outras páginas -->
-    <div class="links">
-      <h1><a href="/portfolio/sobre-page/sobre.html">Sobre mim</a></h1>
-      <h1><a href="/portfolio/formacao-page/formacao.html">Formação</a></h1>
-      <h1><a href="/portfolio/projetos-page/projetos.html">Projetos</a></h1>
-      <h1><a href="/portfolio/contato-page/contato.html">Contato</a></h1>
-
-      <!-- div gif onde fica o gif que é exibido na home-page -->
-      <div class="gif">
-        <img
-          id="gif"
-          src="/portfolio/imagens/gifs/cat.gif"
-          width="480"
-          height="480"
-        />
-      </div>
+      <hr class="linha-rodape" />
+      <!-- rodapé -->
+      <footer>
+        <p>
+          © 2024 ~
+          <a
+            class="link-footer"
+            href="https://github.com/leticiareis6858/portfolio/"
+          >
+            Ana Leticia Vieira</a
+          >
+        </p>
+        <p>
+          GIFs por
+          <a class="link-footer" href="https://giphy.com/kaijupxl">kaijupxl</a>
+        </p>
+      </footer>
     </div>
-  </div>
+  </body>
 </html>
