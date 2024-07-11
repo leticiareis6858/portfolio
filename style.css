@@ -325,3 +325,49 @@ a:hover {
     flex: 2;
   }
 }
+
+/* estilo do rodapé */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+footer p {
+  margin: 5px 0; /* Adiciona espaçamento vertical entre os parágrafos */
+}
+
+.link-footer {
+  color: #fc0a97e5;
+}
+
+.link-footer:hover {
+  color: #fd34a971;
+}
+
+.dark .link-footer {
+  color: #2e004d;
+}
+
+.dark .link-footer:hover {
+  color: #55018df3;
+}
+
+.linha-rodape {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.dark .linha-rodape {
+  background: #f6f6f6;
+}
+.dark footer {
+  color: #f6f6f6;
+}
