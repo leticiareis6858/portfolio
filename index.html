@@ -1,4 +1,3 @@
-<!-- html da home-page -->
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -16,39 +15,72 @@
       rel="stylesheet"
     />
   </head>
+  <body>
+    <!-- div container onde fica todo o conteudo principal do site -->
+    <div class="container">
+      <!-- botão de mudar o tema do site -->
+      <div class="tema">
+        <button onclick="mudarTema()">Alterar tema</button>
+      </div>
 
-  <!-- div container onde fica todo o conteudo principal do site -->
-  <div class="container">
-    <!-- botão de mudar o tema do site -->
-    <div class="tema">
-      <button onclick="mudarTema()">Alterar tema</button>
-    </div>
+      <!-- header cabeçalho onde fica a foto de perfil -->
+      <header class="cabecalho">
+        <div class="perfil">
+          <img class="perfil-foto" src="/imagens/profile-pic.png" />
+          <div class="titulo">
+            <h1>Ana Leticia de Carvalho</h1>
+            <h3>
+              Desenvolvedora back-end e estudante de Análise e Desenvolvimento
+              de Sistemas
+            </h3>
+          </div>
+        </div>
+      </header>
 
-    <!-- header cabeçalho onde fica a foto de perfil -->
-    <header class="cabecalho">
-      <div class="perfil">
-        <img class="perfil-foto" src="/imagens/profile-pic.png" />
-        <div class="titulo">
-          <h1>Ana Leticia de Carvalho</h1>
-          <h3>
-            Desenvolvedora back-end e estudante de Análise e Desenvolvimento de
-            Sistemas
-          </h3>
+      <!-- div conteudo-principal que contém os links e o gif -->
+      <div class="conteudo-principal">
+        <!-- div links onde ficam os links internos para as outras páginas -->
+        <div class="links">
+          <div class="coluna-links">
+            <h1>
+              <a class="links-internos-home" href="/sobre-page/sobre.html"
+                >Sobre mim</a
+              >
+            </h1>
+            <h1>
+              <a class="links-internos-home" href="/formacao-page/formacao.html"
+                >Formação</a
+              >
+            </h1>
+            <h1>
+              <a class="links-internos-home" href="/projetos-page/projetos.html"
+                >Projetos</a
+              >
+            </h1>
+            <h1>
+              <a class="links-internos-home" href="/contato-page/contato.html"
+                >Contato</a
+              >
+            </h1>
+          </div>
+
+          <!-- div coluna-gif onde fica o gif que é exibido na home-page -->
+          <div class="coluna-gif">
+            <img
+              id="gif"
+              src="/imagens/gifs/plant-kaijupxl.gif"
+              width="200"
+              height="200"
+            />
+          </div>
         </div>
       </div>
-    </header>
 
-    <!-- div links onde ficam os links internos para as outras páginas -->
-    <div class="links">
-      <h1><a href="/sobre-page/sobre.html">Sobre mim</a></h1>
-      <h1><a href="/formacao-page/formacao.html">Formação</a></h1>
-      <h1><a href="/projetos-page/projetos.html">Projetos</a></h1>
-      <h1><a href="/contato-page/contato.html">Contato</a></h1>
-
-      <!-- div gif onde fica o gif que é exibido na home-page -->
-      <div class="gif">
-        <img id="gif" src="/imagens/gifs/cat.gif" width="480" height="480" />
-      </div>
+      <!-- rodapé -->
+      <footer>
+        <p>© 2024 Ana Leticia Vieira</p>
+        <p>GIF por <a href="https://giphy.com/kaijupxl">kaijupxl</a></p>
+      </footer>
     </div>
-  </div>
+  </body>
 </html>
